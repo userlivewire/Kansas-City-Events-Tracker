@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kansas City Event Tracker</title>
+<title>Kansas City Area Events Tracker</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -114,7 +114,7 @@
 <body>
 
 <header>
-  <h1>Kansas City Event Tracker</h1>
+  <h1>Kansas City Area Events Tracker</h1>
   <p class="subtitle">All venues &middot; Sorted by date &middot; Sources: VisitKC, Shuttlecock, Ticketmaster, Fox4, cityofls.net</p>
   <div class="controls">
     <input type="text" id="search" placeholder="Search artist, venue..." oninput="filter()">
@@ -294,6 +294,81 @@ const RAW = [
   {d:"2026-11-09",a:"Three Days Grace w/ I Prevail and The Funeral Portrait",v:"T-Mobile Center"},
   {d:"2026-11-16",a:"The Neighbourhood",v:"T-Mobile Center"},
   {d:"2026-11-17",a:"Switchfoot",v:"Uptown Theater"},
+
+  // ── LEMONADE PARK (KC) ──
+  {d:"2026-06-20",a:"KC Bones",v:"Lemonade Park (KC)"},
+  {d:"2026-08-04",a:"Watchhouse",v:"Lemonade Park (KC)"},
+  {d:"2026-09-11",a:"Mini Trees",v:"Lemonade Park (KC)"},
+
+  // ── LAWRENCE, KS – LIBERTY HALL (additional shows) ──
+  {d:"2026-06-23",a:"The Wallflowers",v:"Liberty Hall (Lawrence)"},
+  {d:"2026-09-09",a:"Judy Collins w/ Bruce Cockburn: Sweet Judy Blue Eyes Farewell",v:"Liberty Hall (Lawrence)"},
+  {d:"2026-11-11",a:"Kurt Vile & The Violators",v:"Liberty Hall (Lawrence)"},
+
+  // ── LIED CENTER OF KANSAS (Lawrence – KU campus) ──
+  {d:"2026-09-26",a:"Jazz at Lincoln Center Orchestra w/ Wynton Marsalis",v:"Lied Center of Kansas (Lawrence)"},
+  {d:"2026-10-02",a:"Renée Fleming",v:"Lied Center of Kansas (Lawrence)"},
+  {d:"2026-10-15",a:"IL DIVO",v:"Lied Center of Kansas (Lawrence)"},
+  {d:"2026-11-06",a:"KINKY BOOTS (National Broadway Tour)",v:"Lied Center of Kansas (Lawrence)"},
+  {d:"2026-11-20",a:"CHICAGO The Musical (National Broadway Tour)",v:"Lied Center of Kansas (Lawrence)"},
+
+  // ── WICHITA, KS – WAVE ──
+  {d:"2026-05-28",a:"Wade Bowen",v:"Wave (Wichita)"},
+  {d:"2026-05-29",a:"Grey Daze",v:"Wave (Wichita)"},
+  {d:"2026-06-03",a:"Spineshank",v:"Wave (Wichita)"},
+  {d:"2026-06-04",a:"Adelitas Way",v:"Wave (Wichita)"},
+  {d:"2026-06-05",a:"Y2K Party",v:"Wave (Wichita)"},
+  {d:"2026-06-06",a:"Trakas Banda y Rave",v:"Wave (Wichita)"},
+  {d:"2026-06-07",a:"Moon Walker",v:"Wave (Wichita)"},
+  {d:"2026-06-08",a:"Death Angel",v:"Wave (Wichita)"},
+  {d:"2026-06-19",a:"The Acacia Strain",v:"Wave (Wichita)"},
+
+  // ── WICHITA, KS – THE COTILLION ──
+  {d:"2026-06-05",a:"Larry Fleet",v:"The Cotillion (Wichita)"},
+  {d:"2026-06-11",a:"Jefferson Starship",v:"The Cotillion (Wichita)"},
+  {d:"2026-06-20",a:"Dayshift",v:"The Cotillion (Wichita)"},
+  {d:"2026-06-21",a:"The Wallflowers",v:"The Cotillion (Wichita)"},
+  {d:"2026-06-23",a:"Wyatt Flores",v:"The Cotillion (Wichita)"},
+
+  // ── WICHITA, KS – WICHITA RIVERFEST (Kennedy Plaza Stage) ──
+  {d:"2026-06-02",a:"Wichita Riverfest: Sons of Legion",v:"Kennedy Plaza Stage (Wichita)",n:"Button admission – festival runs May 29–Jun 6"},
+  {d:"2026-06-03",a:"Wichita Riverfest: Jonathan McReynolds",v:"Kennedy Plaza Stage (Wichita)",n:"Button admission"},
+  {d:"2026-06-04",a:"Wichita Riverfest: El Fantasma",v:"Kennedy Plaza Stage (Wichita)",n:"Button admission"},
+  {d:"2026-06-05",a:"Wichita Riverfest: The Jacksons",v:"Kennedy Plaza Stage (Wichita)",n:"Button admission"},
+
+  // ── WICHITA, KS – OTHER VENUES ──
+  {d:"2026-06-06",a:"Midwest R&B Fest ft. Jacquees, Kelly Price, Lyfe Jennings, Rome",v:"Capitol Federal Amphitheater (Wichita)"},
+  {d:"2026-06-11",a:"Wichita Lineman – Glen Campbell Tribute",v:"Wichita Union Stockyards"},
+  {d:"2026-06-18",a:"Luke Bryan",v:"INTRUST Bank Arena (Wichita)"},
+  {d:"2026-06-19",a:"Kansas – The Band",v:"Heartland Credit Union Arena (Valley Center, KS)"},
+
+  // ── COLUMBIA, MO – THE BLUE NOTE ──
+  {d:"2026-05-30",a:"Interstellar Overdrive: The Wall (Pink Floyd Tribute)",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-06-05",a:"Name That Tune: Pride Anthems Edition",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-06-07",a:"Rock the Mic: Live Band Karaoke Fundraiser",v:"The Blue Note (Columbia, MO)",n:"Compass Inc. Presents"},
+  {d:"2026-06-20",a:"DEMOLA LIVE!",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-06-22",a:"Armor For Sleep w/ Spanish Love Songs & Flycatcher",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-06-26",a:"KCMQ Morning Shag Birthday Bash ft. Optimus Prime",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-06-27",a:"The Burney Sisters w/ River & Rail",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-07-10",a:"Runnin' Down A Dream: A Salute to Tom Petty w/ Mercury Trio",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-07-17",a:"Country Royale – Miranda Lambert, Brooks & Dunn, Dolly, Garth Tributes",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-07-26",a:"Tab Benoit: Soul of the Swamp Tour",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-09-23",a:"Modest Mouse",v:"The Blue Note (Columbia, MO)"},
+  {d:"2026-11-05",a:"TobyMac, Third Day & Chris Tomlin",v:"Mizzou Arena (Columbia, MO)"},
+
+  // ── COLUMBIA, MO – ROSE MUSIC HALL / ROSE PARK ──
+  {d:"2026-05-24",a:"Pedaler's Jamboree Afterparty ft. Bobby Reil, Meredith Shaw & Flyover Country",v:"Rose Park (Columbia, MO)",n:"FREE"},
+  {d:"2026-05-29",a:"Josh Meloy w/ Hoss Miller",v:"Rose Park (Columbia, MO)"},
+  {d:"2026-05-30",a:"Joe Stamm Band w/ Jake Stringer",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-06-02",a:"Arts Fishing Club w/ Cardinal Bloom",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-06-03",a:"Willi Carlisle",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-06-05",a:"moonsault w/ Bogus and Find Fiona",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-06-06",a:"Dope Ass Sneakers",v:"Rose Park (Columbia, MO)"},
+  {d:"2026-06-12",a:"Joe Jordan w/ Isaac Schneider",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-06-17",a:"Fruit Bats",v:"Rose Park (Columbia, MO)"},
+  {d:"2026-06-19",a:"Kameron Marlowe",v:"Rose Park (Columbia, MO)"},
+  {d:"2026-06-23",a:"The Dead South w/ Amigo The Devil",v:"Rose Music Hall (Columbia, MO)"},
+  {d:"2026-09-24",a:"Modest Mouse: Central Bank Downtown Live",v:"Rose Park (Columbia, MO)"},
 ];
 
 const MONTHS = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
